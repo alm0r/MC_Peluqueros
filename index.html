@@ -2,18 +2,194 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="This is where your description goes" />
-    <meta name="keywords" content="one, two, three" />
+    <meta name="description" content="MC Peluqueros website, la mejor barberia de Pamplona" />
+    <meta name="keywords" content="barbershop, hairstyle, pamplona, peluqueria, barberia, peluqueros" />
 
-    <title>Title in the tab</title>
+    <title>MC Peluqueros | La mejor barberia de Pamplona</title>
 
     <!-- external CSS link -->
 
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/inicio.css" /> -->
+    <!-- old normalize.css, now works through npm -->
+    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
     <script defer type="text/javascript" src="js/main.js"></script>
-    <!-- <script defer type="text/javascript" src="js/main.js"></script> -->
   </head>
-  <body></body>
+  <body>
+    <header>
+      <a href="#">
+        <img class="logo" src="" alt="" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#inicio"> Inicio</a></li>
+          <li><a class="main-nav-link" href="#servicios"> Servicios</a></li>
+          <li><a class="main-nav-link" href="#historia"> Historia y Equipo</a></li>
+          <li><a class="main-nav-link" href="#contacto"> Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-text-box">
+          <h1 class="heading-primary">MC PELUQUEROS</h1>
+          <h2 class="heading-secondary">TRADICION Y VANGUARDIA</h2>
+          <h3 class="heading-terciary">DESDE 1986</h3>
+        </div>
+      </section>
+      <!-- CULTURE -->
+      <section class="culture">
+        <div class="culture-section-title">
+          <h2>NUESTRA CULTURA DE TRABAJO</h2>
+          <h3>EXCELENCIA EN EL TRATO Y ACABADOS EN MAXIMA CALIDAD</h3>
+        </div>
+        <!-- STEP 01 -->
+        <div class="container grid grid--2-cols grid--center-v">
+          <div class="step-img-box">
+            <img class="step-img" src="img/app/app-screen-2.png" alt="iphone meal approving plan screen" />
+          </div>
+          <div class="step-text-box">
+            <h3 class="heading-tertiary">PELUQUERIA DE CABALLEROS REFERENTE EN PAMPLONA</h3>
+            <p class="step-description">
+              Fundada en 1986 por el maestro barbero Rafael Cayuelas, a día de hoy es la peluquería de caballeros referente en Pamplona. Tras el
+              relevo generacional en 2010, ha sabido fusionar la tradición del corte de caballero más clásico con las técnicas más vanguardistas de la
+              mano de Carlos Cayuelas y Montxo.
+            </p>
+            <button class="btn">HISTORIA Y EQUIPO</button>
+          </div>
+        </div>
+        <!-- STEP 02 -->
+        <div class="container grid grid--2-cols grid--center-v">
+          <div class="step-text-box">
+            <h3 class="heading-tertiary">¿POR QUE ELEGIR NUESTRA BARBERSHOP?</h3>
+            <p class="step-description">
+              Nuestra barbería es un espacio creado para los clientes que aprecian la alta calidad en los acabados y buscan un aspecto impecable. En
+              nuestro local disfrutarás de una experiencia del más alto nivel.
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img class="step-img" src="img/app/app-screen-1.png" alt="iphone app preferences selection screen" />
+          </div>
+        </div>
+      </section>
+      <!-- REVIEWS -->
+      <section class="reviews">
+        <h2 class="reviews-title">TOP 5</h2>
+        <h3 class="reviews-subtitle">EN EL TOP 5 DE LAS BARBERIAS MEJOR VALORADAS A NIVEL NACIONAL</h3>
+        <div class="reviews-carousel"></div>
+        <a
+          href="https://www.google.com/maps/place/Mc+Peluqueros/@42.7760854,-1.6928213,12z/data=!4m8!3m7!1s0xd50926093675bdf:0x48137eba5987d3af!8m2!3d42.8093195!4d-1.6575277!9m1!1b1!16s%2Fg%2F12qfp98j9"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          VER TODAS LAS RESEÑAS EN GOOGLE
+        </a>
+      </section>
+      <!-- SERVICES -->
+      <section class="services">
+        <h2 class="services-title">SERVICIOS</h2>
+        <h3 class="services-subtitle">CORTE DE CABALLEROS CLASICO Y TECNICAS VANGUARDISTAS</h3>
+        <div class="container grid grid--3-columns">
+          <div class="services-item corte">
+            <img class="services-item-logo" src="" alt="" />
+            <h3 class="services-item-title">CORTE</h3>
+            <p class="services-item-text">Corte de pelo clásico (navaja, tijera), corte últimas tendencias y corte de niño.</p>
+          </div>
+
+          <div class="services-item barba">
+            <img class="services-item-logo" src="" alt="" />
+            <h3 class="services-item-title">BARBA</h3>
+            <p class="services-item-text">Afeitado técnica tradicional a navaja, arreglos de barba y primeras marcas en productos de afeitado.</p>
+          </div>
+
+          <div class="services-item tratamientos">
+            <img class="services-item-logo" src="" alt="" />
+            <h3 class="services-item-title">TRATAMIENTOS</h3>
+            <p class="services-item-text">Color, tratamiento de canas, arreglo de cejas y orejas (cera) y tratamientos capilares.</p>
+          </div>
+        </div>
+      </section>
+      <!-- IMAGES SLIDE -->
+      <section class="images-slide">
+        <div class="img-item">
+          <img src="" alt="" />
+        </div>
+      </section>
+      <!-- CARD & MAP -->
+      <section class="card-and-map">
+        <div class="card">
+          <img src="" alt="logo" />
+          <ul class="card-info">
+            <li class="card-info-tlfn">
+              <div class="tlfn">
+                <img class="card-info-logo logo" src="" alt="logo" />
+                <h4 class="card-info-text">PIDE CITA: 948 17 02 10</h4>
+              </div>
+            </li>
+
+            <li class="card-info-address">
+              <div class="address">
+                <img class="card-info-logo logo" src="" alt="logo" />
+                <h4 class="card-info-text">Av. de Pío XII, 17 Trasera, 31008. Pamplona</h4>
+              </div>
+            </li>
+
+            <li class="card-info-time">
+              <div class="time">
+                <img class="card-info-logo logo" src="" alt="log" />
+                <h4 class="card-info-text">Lunes a viernes de 9:00 a 13:30 y de 16:00 a 20:00 horas. Sábados de 9:00 a 13:30 horas.</h4>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="card-info-bottom">
+            <li>
+              <ul class="social-links">
+                <li>
+                  <a class="footer-link" href=""><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
+                </li>
+                <li>
+                  <a class="footer-link" href=""><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a>
+                </li>
+                <li>
+                  <a class="footer-link" href=""><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div>
+                <img src="" alt="green plant logo" />
+                <p>COMPROMETIDOS CON EL MEDIO AMBIENTE</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="" alt="uk flag logo" />
+                <p>WE SPEAK ENGLISH</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2927.0053205917307!2d-1.6597794484376907!3d42.80937361449692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd50926093675bdf%3A0x48137eba5987d3af!2sMc%20Peluqueros!5e0!3m2!1ses!2ses!4v1622014168605!5m2!1ses!2ses"
+            width="900"
+            height="450"
+            style="border: 0px; max-width: 100%; max-height: 605px"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>MC PELUQUEROS ©2021 | Desarrollo: YC <a href="https://ycestudiocreativo.es/"> Yce Estudio Creativo</a></p>
+      <div>
+        <a href="">Politica de Cookies</a>
+        <a href="">Aviso Legal</a>
+      </div>
+    </footer>
+  </body>
 </html>

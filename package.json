@@ -1,0 +1,23 @@
+{
+  "name": "mc_peluqueros",
+  "version": "1.0.0",
+  "description": "Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).",
+  "homepage": "https://github.com/alm0r/MC_Peluqueros#readme",
+  "bugs": {
+    "url": "https://github.com/alm0r/MC_Peluqueros/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alm0r/MC_Peluqueros.git"
+  },
+  "license": "ISC",
+  "author": "almor",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
