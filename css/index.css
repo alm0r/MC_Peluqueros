@@ -1,0 +1,42 @@
+.header {
+  margin: auto;
+  /* background-color: lightcoral; */
+  display: flex;
+  justify-content: space-between;
+  height: 20vh;
+  align-items: center;
+  max-width: 1600px;
+  padding: 1.6rem 3.2rem;
+}
+
+.header-logo {
+  width: 380px;
+  max-width: 100%;
+  height: auto;
+}
+
+.main-nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link {
+  display: block;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.main-nav-link:hover {
+  color: var(--accent);
+  transition: all 0.4s ease-out;
+}
+
+.main-nav-link:focus,
+.main-nav-link:active {
+  color: var(--accent);
+}
+
+.main-nav-link:visited {
+  color: var(--textColor);
+}

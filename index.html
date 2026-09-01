@@ -7,20 +7,27 @@
 
     <title>MC Peluqueros | La mejor barberia de Pamplona</title>
 
-    <!-- external CSS link -->
-
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <!-- <link rel="stylesheet" href="css/inicio.css" /> -->
     <!-- old normalize.css, now works through npm -->
     <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+
+    <!-- external CSS link -->
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <!-- ICONS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+
     <script defer type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
-    <header>
-      <a href="#">
-        <img class="logo" src="" alt="" />
-      </a>
+    <header class="header">
+      <img class="header-logo" src="./media/mc-peluqueros-logo-negativo.png" alt="MC Peluqueros Logo" />
+
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#inicio"> Inicio</a></li>
@@ -122,23 +129,23 @@
         <div class="card">
           <img src="" alt="logo" />
           <ul class="card-info">
-            <li class="card-info-tlfn">
-              <div class="tlfn">
-                <img class="card-info-logo logo" src="" alt="logo" />
+            <li class="card-info-item">
+              <div class="card-element">
+                <i class="ph ph-phone"></i>
                 <h4 class="card-info-text">PIDE CITA: 948 17 02 10</h4>
               </div>
             </li>
 
-            <li class="card-info-address">
-              <div class="address">
-                <img class="card-info-logo logo" src="" alt="logo" />
+            <li class="card-info-item">
+              <div class="card-element">
+                <i class="ph ph-map-pin"></i>
                 <h4 class="card-info-text">Av. de Pío XII, 17 Trasera, 31008. Pamplona</h4>
               </div>
             </li>
 
-            <li class="card-info-time">
-              <div class="time">
-                <img class="card-info-logo logo" src="" alt="log" />
+            <li class="card-info-item">
+              <div class="card-element">
+                <i class="ph ph-clock"></i>
                 <h4 class="card-info-text">Lunes a viernes de 9:00 a 13:30 y de 16:00 a 20:00 horas. Sábados de 9:00 a 13:30 horas.</h4>
               </div>
             </li>
@@ -148,19 +155,40 @@
             <li>
               <ul class="social-links">
                 <li>
-                  <a class="footer-link" href=""><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
+                  <a
+                    class="logo-social-link"
+                    href="https://www.facebook.com/MCPeluquerosPamplona/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    name="logo-facebook"
+                    ><i class="ph ph-facebook-logo"></i
+                  ></a>
                 </li>
                 <li>
-                  <a class="footer-link" href=""><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a>
+                  <a
+                    class="logo-social-link"
+                    href="https://www.instagram.com/mc_peluqueros/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    name="logo-instagram"
+                    ><i class="ph ph-instagram-logo"></i
+                  ></a>
                 </li>
                 <li>
-                  <a class="footer-link" href=""><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a>
+                  <a
+                    class="logo-social-link"
+                    href="https://www.youtube.com/channel/UCMk7CaKjuZ-OlLQN11d2FPA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    name="logo-youtube"
+                    ><i class="ph ph-youtube-logo"></i
+                  ></a>
                 </li>
               </ul>
             </li>
             <li>
               <div>
-                <img src="" alt="green plant logo" />
+                <i class="ph ph-leaf"></i>
                 <p>COMPROMETIDOS CON EL MEDIO AMBIENTE</p>
               </div>
             </li>
@@ -185,7 +213,7 @@
       </section>
     </main>
     <footer class="footer">
-      <p>MC PELUQUEROS ©2021 | Desarrollo: YC <a href="https://ycestudiocreativo.es/"> Yce Estudio Creativo</a></p>
+      <p>MC PELUQUEROS ©2021 | Desarrollo: <a href="https://ycestudiocreativo.es/"> YC Estudio Creativo</a></p>
       <div>
         <a href="">Politica de Cookies</a>
         <a href="">Aviso Legal</a>
