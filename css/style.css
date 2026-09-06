@@ -55,9 +55,11 @@ Medium: 1.2rem
   /* colors */
   --primary: #14151a;
 
-  --primary-tint-dark: #2f323a;
+  --primary-tint-dark: #23252e;
+  --primary-tint-medium: #2c2f3a;
 
   --primary-shade-dark: #050506;
+  --primary-shade-medium: #1c1c21;
 
   --accent: #b08d57;
   --accent-2: #6b1e2e;
@@ -153,7 +155,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 3rem;
 }
 
 h4 {
@@ -225,3 +227,40 @@ a:visited {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+/******************************************
+/* GLOBAL RULES
+/*******************************************/
+
+.img-enable {
+  display: block;
+}
+
+.img-disable {
+  display: none;
+}
+
+/* .container {
+  max-width: 180rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+} */
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 6.4rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-columns {
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.step-1 {
+  margin-bottom: 4.8rem;
+}

@@ -8,8 +8,8 @@
     <title>MC Peluqueros | La mejor barberia de Pamplona</title>
 
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="stylesheet" href="css/inicio.css" /> -->
     <!-- old normalize.css, now works through npm -->
     <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
@@ -54,105 +54,141 @@
       </section>
       <!-- CULTURE -->
       <section class="culture">
-        <div class="culture-section-title">
+        <div class="section-title">
           <h2>NUESTRA CULTURA DE TRABAJO</h2>
           <h3>EXCELENCIA EN EL TRATO Y ACABADOS EN MAXIMA CALIDAD</h3>
         </div>
-        <!-- STEP 01 -->
-        <div class="container grid grid--2-cols grid--center-v">
-          <div class="step-img-box">
-            <img class="step-img" src="img/app/app-screen-2.png" alt="iphone meal approving plan screen" />
+        <div class="culture-section-grid">
+          <!-- STEP 01 -->
+          <div class="container grid grid--2-cols step-1">
+            <div class="step-img-box">
+              <img class="step-img step-img-left" src="./media/culture-imgs/equipo1.jpg Cropped.webp" alt="iphone meal approving plan screen" />
+            </div>
+            <div class="step-text-box">
+              <h3 class="heading-tertiary">PELUQUERIA DE CABALLEROS</h3>
+              <h3 class="heading-tertiary">REFERENTE EN PAMPLONA</h3>
+              <p class="step-description">
+                Fundada en 1986 por el maestro barbero Rafael Cayuelas, a día de hoy es la peluquería de caballeros referente en Pamplona. Tras el
+                relevo generacional en 2010, ha sabido fusionar la tradición del corte de caballero más clásico con las técnicas más vanguardistas de
+                la mano de Carlos Cayuelas y Montxo.
+              </p>
+              <button class="btn step-btn">HISTORIA Y EQUIPO</button>
+            </div>
           </div>
-          <div class="step-text-box">
-            <h3 class="heading-tertiary">PELUQUERIA DE CABALLEROS REFERENTE EN PAMPLONA</h3>
-            <p class="step-description">
-              Fundada en 1986 por el maestro barbero Rafael Cayuelas, a día de hoy es la peluquería de caballeros referente en Pamplona. Tras el
-              relevo generacional en 2010, ha sabido fusionar la tradición del corte de caballero más clásico con las técnicas más vanguardistas de la
-              mano de Carlos Cayuelas y Montxo.
-            </p>
-            <button class="btn">HISTORIA Y EQUIPO</button>
-          </div>
-        </div>
-        <!-- STEP 02 -->
-        <div class="container grid grid--2-cols grid--center-v">
-          <div class="step-text-box">
-            <h3 class="heading-tertiary">¿POR QUE ELEGIR NUESTRA BARBERSHOP?</h3>
-            <p class="step-description">
-              Nuestra barbería es un espacio creado para los clientes que aprecian la alta calidad en los acabados y buscan un aspecto impecable. En
-              nuestro local disfrutarás de una experiencia del más alto nivel.
-            </p>
-          </div>
-          <div class="step-img-box">
-            <img class="step-img" src="img/app/app-screen-1.png" alt="iphone app preferences selection screen" />
+          <!-- STEP 02 -->
+          <div class="container grid grid--2-cols step-2">
+            <div class="step-text-box">
+              <h3 class="heading-tertiary">¿POR QUE ELEGIR</h3>
+              <h3 class="heading-tertiary">NUESTRA BARBERSHOP?</h3>
+              <p class="step-description">
+                Nuestra barbería es un espacio creado para los clientes que aprecian la alta calidad en los acabados y buscan un aspecto impecable. En
+                nuestro local disfrutarás de una experiencia del más alto nivel.
+              </p>
+            </div>
+            <div class="step-img-box">
+              <!-- <img
+              class="step-img step-img-right"
+              src="./media/culture-imgs/equipo1.jpg-optimized.webp"
+              alt="iphone app preferences selection screen"
+              /> -->
+              <iframe
+                class="step-img step-img-video"
+                height=""
+                src="https://player.vimeo.com/video/1223403799?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                title="MC-PELUQUEROS video rip"
+                playsinline="false"
+                responsive="true"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
       <!-- REVIEWS -->
+
       <section class="reviews">
-        <h2 class="reviews-title">TOP 5</h2>
-        <h3 class="reviews-subtitle">EN EL TOP 5 DE LAS BARBERIAS MEJOR VALORADAS A NIVEL NACIONAL</h3>
-        <div class="reviews-carousel"></div>
-        <a
-          href="https://www.google.com/maps/place/Mc+Peluqueros/@42.7760854,-1.6928213,12z/data=!4m8!3m7!1s0xd50926093675bdf:0x48137eba5987d3af!8m2!3d42.8093195!4d-1.6575277!9m1!1b1!16s%2Fg%2F12qfp98j9"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          VER TODAS LAS RESEÑAS EN GOOGLE
-        </a>
+        <div class="section-title">
+          <h2 class="reviews-title">TOP 5</h2>
+          <h3 class="reviews-subtitle">EN EL TOP 5 DE LAS BARBERIAS MEJOR VALORADAS A NIVEL NACIONAL</h3>
+          <div class="reviews-carousel"></div>
+          <button class="btn step-btn">
+            <a
+              href="https://www.google.com/maps/place/Mc+Peluqueros/@42.7760854,-1.6928213,12z/data=!4m8!3m7!1s0xd50926093675bdf:0x48137eba5987d3af!8m2!3d42.8093195!4d-1.6575277!9m1!1b1!16s%2Fg%2F12qfp98j9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              VER TODAS LAS RESEÑAS EN GOOGLE
+            </a>
+          </button>
+        </div>
       </section>
       <!-- SERVICES -->
       <section class="services">
-        <h2 class="services-title">SERVICIOS</h2>
-        <h3 class="services-subtitle">CORTE DE CABALLEROS CLASICO Y TECNICAS VANGUARDISTAS</h3>
+        <div class="section-title">
+          <h2 class="services-title">SERVICIOS</h2>
+          <h3 class="services-subtitle">CORTE DE CABALLEROS CLASICO Y TECNICAS VANGUARDISTAS</h3>
+        </div>
         <div class="container grid grid--3-columns">
           <div class="services-item corte">
-            <img class="services-item-logo" src="" alt="" />
+            <img class="services-item-logo" src="./media/services/secador.png" alt="" />
             <h3 class="services-item-title">CORTE</h3>
             <p class="services-item-text">Corte de pelo clásico (navaja, tijera), corte últimas tendencias y corte de niño.</p>
           </div>
 
           <div class="services-item barba">
-            <img class="services-item-logo" src="" alt="" />
+            <img class="services-item-logo" src="./media/services/navaja.png" alt="" />
             <h3 class="services-item-title">BARBA</h3>
             <p class="services-item-text">Afeitado técnica tradicional a navaja, arreglos de barba y primeras marcas en productos de afeitado.</p>
           </div>
 
           <div class="services-item tratamientos">
-            <img class="services-item-logo" src="" alt="" />
+            <img class="services-item-logo" src="./media/services/secador.png" alt="" />
             <h3 class="services-item-title">TRATAMIENTOS</h3>
             <p class="services-item-text">Color, tratamiento de canas, arreglo de cejas y orejas (cera) y tratamientos capilares.</p>
           </div>
         </div>
       </section>
-      <!-- IMAGES SLIDE -->
-      <section class="images-slide">
+      <!-- IMAGES GALLERY SLIDE -->
+      <section class="images-gallery-slide">
+        <div class="section-title">
+          <h2>GALERIA DE IMAGENES</h2>
+          <h3>EXCELENCIA EN EL TRATO Y ACABADOS EN MAXIMA CALIDAD</h3>
+        </div>
+
         <div class="img-item">
           <img src="" alt="" />
         </div>
       </section>
       <!-- CARD & MAP -->
-      <section class="card-and-map">
+      <section class="card-and-map container">
+        <div class="section-title">
+          <h2>DONDE ENCONTRARNOS</h2>
+          <!-- <h3>EXCELENCIA EN EL TRATO Y ACABADOS EN MAXIMA CALIDAD</h3> -->
+        </div>
+        <div class="container grid grid--2-cols">
         <div class="card">
-          <img src="" alt="logo" />
+          <img class="card-logo" src="./media/card-and-map/mc-peluqueros-logo-negativo-300x124.png" alt="logo" />
           <ul class="card-info">
             <li class="card-info-item">
               <div class="card-element">
-                <i class="ph ph-phone"></i>
+                <i class="ph ph-phone card-element-icon"></i>
                 <h4 class="card-info-text">PIDE CITA: 948 17 02 10</h4>
               </div>
             </li>
 
             <li class="card-info-item">
               <div class="card-element">
-                <i class="ph ph-map-pin"></i>
-                <h4 class="card-info-text">Av. de Pío XII, 17 Trasera, 31008. Pamplona</h4>
+                <i class="ph ph-map-pin card-element-icon"></i>
+                <h4 class="card-info-text">Av. de Pío XII, 17 Trasera, 31008. Pamplona.</h4>
               </div>
             </li>
 
             <li class="card-info-item">
               <div class="card-element">
-                <i class="ph ph-clock"></i>
-                <h4 class="card-info-text">Lunes a viernes de 9:00 a 13:30 y de 16:00 a 20:00 horas. Sábados de 9:00 a 13:30 horas.</h4>
+                <i class="ph ph-clock card-element-icon"></i>
+                <h4 class="card-info-text horario">Lunes a Viernes de 9:00h a 13:30h y de 16:00h a 20:00h</br> <span>Sábados de 9:00 a 13:30 horas.</span></h4>
               </div>
             </li>
           </ul>
@@ -193,36 +229,36 @@
               </ul>
             </li>
             <li>
-              <div>
+              <div class="green-wash">
                 <i class="ph ph-leaf"></i>
-                <p>COMPROMETIDOS CON EL MEDIO AMBIENTE</p>
+                <p><br>COMPROMETIDOS CON<br>EL MEDIO AMBIENTE </br></p>
               </div>
             </li>
-            <li>
-              <div>
-                <img src="" alt="uk flag logo" />
-                <p>WE SPEAK ENGLISH</p>
+            <li> 
+              <div class="speak-english">
+                <img class="uk-flag-logo" src="./media/card-and-map/english.jpg.jpeg" alt="uk-flag" />
+                <p>WE SPEAK ENGLISH!</p>
               </div>
             </li>
           </ul>
         </div>
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2927.0053205917307!2d-1.6597794484376907!3d42.80937361449692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd50926093675bdf%3A0x48137eba5987d3af!2sMc%20Peluqueros!5e0!3m2!1ses!2ses!4v1622014168605!5m2!1ses!2ses"
-            width="900"
-            height="450"
-            style="border: 0px; max-width: 100%; max-height: 605px"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
+        <div class="map card">
+            <iframe style="border:none" src="https://mapy.com/s/potenosetu" width="700" height="400" frameborder="0"></iframe>
+        </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <p>MC PELUQUEROS ©2021 | Desarrollo: <a href="https://ycestudiocreativo.es/"> YC Estudio Creativo</a></p>
-      <div>
-        <a href="">Politica de Cookies</a>
-        <a href="">Aviso Legal</a>
+      <div class="container">
+        
+        
+        <p class="footer-p">MC PELUQUEROS ©2021 | Desarrollo: <a id="footer-links" href="https://ycestudiocreativo.es/"> YC Estudio Creativo</a></p>
+        <div>
+          <a id="footer-links" href="">Politica de Cookies <span>|</span></a>
+          
+          <a id="footer-links" href="">Aviso Legal</a>
+        </div>
+        
       </div>
     </footer>
   </body>

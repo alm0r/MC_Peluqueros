@@ -1,11 +1,11 @@
 /* ///////////////////////////  HEADER  ///////////////////////////// */
 
 .header {
-  margin: auto;
   /* background-color: lightcoral; */
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  height: 12vh;
+  height: 12rem;
   align-items: center;
   max-width: 1600px;
   padding: 1.6rem 3.2rem;
@@ -46,14 +46,15 @@
 /* ////////////////////////  HERO  //////////////////////////////// */
 
 .hero {
-  height: 88vh;
+  max-height: 88rem;
   /* border: 2px solid pink; */
   overflow: hidden;
+
+  position: relative;
 }
 
 .hero-img-container {
-  position: relative;
-  border: 3px solid var(--accent);
+  /* border: 3px solid var(--accent); */
 
   max-height: 100%;
   width: 100%;
@@ -86,25 +87,331 @@
 }
 
 .heading-primary {
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.2rem;
   font-weight: 700;
+  text-shadow: 0px 0px 2px var(--accent);
 }
 
 .heading-secondary {
   margin-bottom: 1.2rem;
+  font-weight: 200;
   color: var(--accent);
-  text-shadow: 1px 1px 2px var(--primary);
+  text-shadow: 1px 1px 10px var(--primary);
 }
 
 .heading-terciary {
   font-weight: 400;
+  opacity: 0.9;
+}
+
+/* ////////////////////////  CULTURE  //////////////////////////////// */
+
+.culture {
+  margin: 0 auto;
+  /* border: 2px solid green; */
+  margin-bottom: 4.8rem;
+}
+
+.section-title {
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: var(--primary);
+}
+
+.culture-section-grid {
+  /* border: 2px solid red; */
+  /* background-color: var(--primary-shade-medium);
+  padding: 4.8rem 2.4rem; */
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 160rem;
+  /* border: 2px solid red; */
+}
+
+.section-title h2 {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 1.2rem;
+  text-decoration-thickness: 3px;
+  margin-bottom: 3.2rem;
+}
+
+.section-title h3 {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.step-text-box {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.heading-tertiary {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.step-text-box h3:last-of-type {
+  color: var(--accent);
+}
+
+.step-text-box p {
+  font-weight: 200;
+  color: var(--grey-medium);
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+  line-height: normal;
+}
+
+.step-img-box {
+  display: grid;
+  justify-items: center;
+}
+
+.step-img {
+  width: 100%;
+  height: auto;
+}
+
+.step-img-video {
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+}
+
+.step-img-left {
+  justify-self: start;
+}
+
+.step-img-right {
+  justify-self: end;
+}
+
+.btn.step-btn {
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  background: transparent;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1.2rem 2.4rem;
+  font-weight: 500;
+}
+
+.step-btn:hover {
+  color: var(--primary);
+  background-color: var(--accent);
+}
+
+/* ////////////////////////  TOP 5 //////////////////////////////// */
+
+.reviews .section-title {
+  background-color: var(--primary-shade-medium);
+}
+
+/* ////////////////////////  SERVICES  //////////////////////////////// */
+
+.services {
+  margin-bottom: 4.8rem;
+}
+
+.services .section-title {
+  background-color: var(--primary);
+}
+
+.services .container {
+  max-width: 120rem;
+}
+
+.services-item {
+  /* border: 2px solid blue; */
+  text-align: center;
+  max-width: 30rem;
+  height: 40rem;
+  justify-self: center;
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 3.2rem;
+  padding: 0 1.8rem;
+  background-color: var(--primary-shade-medium);
+  border: 2px solid var(--accent);
+}
+
+.services-item:hover {
+  background-color: var(--accent);
+  transition: 0.5s ease all;
+}
+
+.services-item:hover .services-item-title {
+  color: var(--textColor);
+  transition: color 0.5s ease;
+}
+
+.services-item-title {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.services-item-logo {
+  display: block;
+  max-width: 10rem;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* ////////////////////////  IMG GALLERY  //////////////////////////////// */
+
+.images-gallery-slide .section-title {
+  background-color: var(--primary-shade-medium);
+}
+
+/* ////////////////////////  CARD & MAP  //////////////////////////////// */
+
+.card-and-map {
+  margin: 0 auto;
+  margin-bottom: 4.8rem;
+}
+.card {
+  max-width: 80rem;
+  max-height: auto;
+  background-color: var(--primary-tint-medium);
+  padding: 2.4rem 4.8rem;
+  border-radius: 2%;
+}
+
+.map {
+  display: inline-block;
+  max-width: 80rem;
+  height: auto;
+}
+
+.card-logo {
+  max-width: 22rem;
+  margin-bottom: 3.2rem;
+}
+
+.card-element {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.8rem;
+}
+
+.card-info-item:last-child .card-element {
+  border-bottom: none;
+}
+
+/* .card-element:last-of-type {
+  border-bottom: none;
+} */
+
+.card-element-icon {
+  font-size: 2.4rem;
+  color: var(--accent);
+}
+
+.card-info-text {
+  font-weight: 500;
+}
+
+.horario {
+  text-transform: none;
+  line-height: 2.4rem;
+}
+
+.card-info-bottom {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4.8rem;
+  /* border: 2px solid orange; */
+}
+
+.social-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.logo-social-link,
+.ph-leaf {
+  font-size: 3.2rem;
+  background-color: var(--accent);
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0.6rem;
+}
+
+.logo-social-link,
+.logo-social-link:link,
+.logo-social-link:visited {
+  /* color: var(--primary-tint-medium); */
+}
+
+.card-info-bottom p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.green-wash,
+.speak-english {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.ph-leaf {
+  background-color: rgb(102, 211, 102);
+}
+
+.green-wash p {
+  color: rgb(102, 211, 102);
+  font-weight: 500;
+  padding-bottom: 1.2rem;
+}
+
+.uk-flag-logo {
+  display: block;
+  max-width: 6rem;
+  height: auto;
+}
+
+/* ////////////////////////  FOOTER  //////////////////////////////// */
+
+.footer {
+  background-color: var(--primary-shade-medium);
+  padding: 1.2rem 0;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-p {
+  font-size: 1.4rem;
+}
+
+#footer-links {
+  font-size: 1.4rem;
 }
 
 /* ///////////////////////////  GENERAL RULES  ///////////////////////////// */
-.img-enable {
-  display: block;
-}
-
-.img-disable {
-  display: none;
-}
