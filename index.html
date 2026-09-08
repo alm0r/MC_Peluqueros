@@ -16,9 +16,9 @@
 
     <!-- external CSS link -->
     <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Prosto+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- ICONS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
 
@@ -112,8 +112,79 @@
         <div class="section-title">
           <h2 class="reviews-title">TOP 5</h2>
           <h3 class="reviews-subtitle">EN EL TOP 5 DE LAS BARBERIAS MEJOR VALORADAS A NIVEL NACIONAL</h3>
-          <div class="reviews-carousel"></div>
-          <button class="btn step-btn">
+          
+          
+      <div class="slider">
+
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <!-- <h5 class="testimonial__header">Best financial decision ever!</h5> -->
+            <blockquote class="testimonial__text">
+              Es la segunda vez que visito MC Peluqueros, y sin lugar a dudas se ha convertido en mi local de confianza. El trato es excelente y muy profesional. 
+              Poseen buena disponibilidad, pero no da la sensación de estar abarrotado. Carlos fue capaz de entender el estilo que buscaba desde el primer momento, 
+              cosa que es muy difícil de encontrar en otras peluquerías. El precio también me parece inmejorable para el buen servicio que ofrecen. 
+              En términos generales, MC peluqueros es un 10.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="./media/reviews/inaki.png" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Iñaki Medina Peralta</h6>
+              <p class="testimonial__location">Corte a tijera</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <!-- <h5 class="testimonial__header">
+              The last step to becoming a complete minimalist
+            </h5> -->
+            <blockquote class="testimonial__text">
+              He estado hoy cortándome el pelo con Carlos, era la primera vez que estaba y la verdad que he salido muy contento ya me había cortado el pelo en otros sitios 
+              y no terminaba de salir convencido y aquí perfecto. Buen ambiente y buenos profesionales así que volveré seguro.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="./media/reviews/javier sanchez.png" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Javier Sanchez</h6>
+              <p class="testimonial__location">Corte a tijera</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <!-- <h5 class="testimonial__header">
+              Finally free from old-school banks
+            </h5> -->
+            <blockquote class="testimonial__text">
+           Hace muchos años que mi marido y mis hijos son clientes de MC Peluqueros y no podríamos estar más contentos. Siempre nos han atendido con muchísima amabilidad y profesionalidad  
+           Cuando mis hijos eran pequeños, tenían mucha paciencia con ellos, haciendo que cada visita fuera agradable. Además, los cortes siempre quedan perfectos, tanto para niños como para adultos.  
+           Muchas gracias por todos estos años de buen trato y excelente trabajo. ¡Un 10!
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="./media/reviews/Cristina Etayo.png" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Criistina Etayo</h6>
+              <p class="testimonial__location">Corte a tijera</p>
+            </address>
+          </div>
+        </div>
+
+        <!-- <div class="slide"><img src="./media/galeria/galeria1.jpg.webp" alt="Photo 1" /></div>
+        <div class="slide"><img src="./media/galeria/galeria2.jpg.webp" alt="Photo 2" /></div>
+        <div class="slide"><img src="./media/galeria/galeria3.jpg.webp" alt="Photo 3" /></div>
+        <div class="slide"><img src="./media/galeria/galeria5.jpg.webp" alt="Photo 4" /></div>  -->
+
+        <button class="btn slider__btn slider__btn--left">
+          <i class="ph ph-caret-circle-left slider-icon"></i>
+        </button>
+
+        <button class="btn slider__btn slider__btn--right">
+          <i class="ph ph-caret-circle-right slider-icon"></i>
+        </button>
+
+        <div class="dots"></div>
+      </div>
+
+      <button class="btn step-btn">
             <a
               href="https://www.google.com/maps/place/Mc+Peluqueros/@42.7760854,-1.6928213,12z/data=!4m8!3m7!1s0xd50926093675bdf:0x48137eba5987d3af!8m2!3d42.8093195!4d-1.6575277!9m1!1b1!16s%2Fg%2F12qfp98j9"
               target="_blank"
@@ -121,7 +192,8 @@
             >
               VER TODAS LAS RESEÑAS EN GOOGLE
             </a>
-          </button>
+      </button>
+
         </div>
       </section>
       <!-- SERVICES -->
@@ -174,14 +246,14 @@
             <li class="card-info-item">
               <div class="card-element">
                 <i class="ph ph-phone card-element-icon"></i>
-                <h4 class="card-info-text">PIDE CITA: 948 17 02 10</h4>
+                <a href="tel:948 17 02 10 "><h4 class="card-info-text">PIDE CITA: 948 17 02 10</h4></a> 
               </div>
             </li>
 
             <li class="card-info-item">
               <div class="card-element">
                 <i class="ph ph-map-pin card-element-icon"></i>
-                <h4 class="card-info-text">Av. de Pío XII, 17 Trasera, 31008. Pamplona.</h4>
+                 <a href="https://maps.app.goo.gl/rbBCH5h2FfaXfYD66"><h4 class="card-info-text">Av. de Pío XII, 17 Trasera, 31008. Pamplona.</h4></a> 
               </div>
             </li>
 

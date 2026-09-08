@@ -117,11 +117,13 @@ html {
 
 body {
   font-family:
-    Roboto,
+    "Roboto",
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
+    "Prosto One",
+    "Limelight",
     Oxygen,
     Ubuntu,
     Cantarell,
@@ -147,11 +149,13 @@ h5 {
 }
 
 h1 {
-  font-size: 8.6rem;
+  font-size: 7.2rem;
+  font-family: "Prosto One", sans-serif;
 }
 
 h2 {
   font-size: 4.4rem;
+  font-family: "Limelight", sans-serif;
 }
 
 h3 {
@@ -199,6 +203,32 @@ img {
   display: inline-block;
 }
 
+/* .slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  color: #333;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+}
+
+.slider__btn--left {
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 6%;
+  transform: translate(50%, -50%);
+} */
+
 /* links */
 
 a:hover {
@@ -239,12 +269,6 @@ a:visited {
 .img-disable {
   display: none;
 }
-
-/* .container {
-  max-width: 180rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
-} */
 
 .grid {
   display: grid;
