@@ -69,6 +69,7 @@
 }
 
 .hero-img-animation {
+  display: block;
   transform: translateY(-120px);
   transition: 7s all ease;
 }
@@ -123,12 +124,6 @@
   padding-top: 8rem;
   padding-bottom: 8rem;
   background-color: var(--primary);
-}
-
-.culture-section-grid {
-  /* border: 2px solid red; */
-  /* background-color: var(--primary-shade-medium);
-  padding: 4.8rem 2.4rem; */
 }
 
 .container {
@@ -219,6 +214,7 @@
 
 .reviews .section-title {
   background-color: var(--primary-shade-medium);
+  border: 2px solid red;
 }
 
 .slider {
@@ -278,13 +274,15 @@
 
 /* TESTIMONIALS */
 .testimonial {
-  width: 70%;
+  width: 80%;
+  /* height: 30rem; */
 
   position: relative;
   background-color: var(--primary-tint-medium);
   padding: 4.8rem 6.4rem;
   border-radius: 30px 130px 30px 130px;
   /* transform: skew(4deg); */
+  /* border: 2px solid green; */
 }
 
 /* .testimonial::before {
@@ -395,7 +393,6 @@
 }
 
 .services-item {
-  /* border: 2px solid blue; */
   text-align: center;
   max-width: 30rem;
   height: 40rem;
@@ -441,8 +438,45 @@
 
 /* ////////////////////////  IMG GALLERY  //////////////////////////////// */
 
+.images-gallery-slide {
+  padding-bottom: 4.8rem;
+}
+
+.images-gallery-slide,
 .images-gallery-slide .section-title {
   background-color: var(--primary-shade-medium);
+}
+
+.gallery-slider {
+  max-width: 160rem;
+  height: 45rem;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-img {
+  position: absolute;
+  top: 0;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  padding-right: 3.2rem;
+  transition: 1s ease all;
+}
+
+.gallery__btn--left {
+  position: absolute;
+  background: transparent;
+}
+
+.gallery__btn--right {
+  position: absolute;
+  right: 0;
+}
+
+.gallery-icon {
+  color: var(--accent);
 }
 
 /* ////////////////////////  CARD & MAP  //////////////////////////////// */
@@ -528,11 +562,11 @@
   padding: 0.6rem;
 }
 
-.logo-social-link,
+/* .logo-social-link,
 .logo-social-link:link,
 .logo-social-link:visited {
-  /* color: var(--primary-tint-medium); */
-}
+  color: var(--primary-tint-medium);
+} */
 
 .card-info-bottom p {
   font-size: 1.6rem;
