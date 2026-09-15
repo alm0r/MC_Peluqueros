@@ -288,3 +288,15 @@ a:visited {
 .step-1 {
   margin-bottom: 4.8rem;
 }
+
+.container {
+  margin: 0 auto;
+  max-width: 160rem;
+}
+
+.section-title {
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: var(--primary);
+}

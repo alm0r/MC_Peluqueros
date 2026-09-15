@@ -119,18 +119,19 @@
   margin-bottom: 4.8rem;
 }
 
-.section-title {
+/* moved to general styles in style.css */
+
+/* .section-title {
   text-align: center;
   padding-top: 8rem;
   padding-bottom: 8rem;
   background-color: var(--primary);
-}
+} */
 
-.container {
+/* .container {
   margin: 0 auto;
   max-width: 160rem;
-  /* border: 2px solid red; */
-}
+} */
 
 .section-title h2 {
   color: var(--accent);
@@ -214,7 +215,7 @@
 
 .reviews .section-title {
   background-color: var(--primary-shade-medium);
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .slider {
