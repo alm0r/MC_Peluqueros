@@ -38,9 +38,9 @@
   color: var(--accent);
 }
 
-/* ////////////////////////  HISTORY  //////////////////////////////// */
+/* ////////////////////////  MEMBER  //////////////////////////////// */
 
-.services {
+.member {
   margin: 0 auto;
   height: 85rem;
   /* border: 2px solid green; */
@@ -49,7 +49,7 @@
   background-color: var(--primary-shade-medium);
 }
 
-#history-section-title {
+#member-section-title {
   background-color: var(--primary-shade-medium);
   /* border: 2px solid blue; */
 
@@ -57,12 +57,89 @@
   padding-bottom: 4.8rem;
 }
 
-#history-container {
+#member-container {
   /* border: 2px solid red; */
-  height: auto;
+  height: 100%;
   padding: 4.8rem 0.2rem;
   position: relative;
+  gap: 0;
+  grid-template-columns: 1fr 2fr;
 }
+
+.member-text-box {
+  display: flex;
+  /* border: 2px solid yellow; */
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 1.2rem;
+  padding-right: 5rem;
+}
+
+.member-name,
+.member-subtitle,
+.member-title {
+  text-transform: uppercase;
+}
+
+.member-name {
+  font-size: 5.2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  color: var(--accent);
+}
+.member-subtitle {
+  font-size: 2rem;
+  margin-bottom: 6.4rem;
+}
+
+.member-title {
+  font-family:
+    "Roboto",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Prosto One",
+    "Limelight",
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+
+  font-weight: 500;
+  margin-bottom: 1.8rem;
+  border-top: 3px solid var(--accent);
+  padding-top: 1.8rem;
+}
+
+.accent-word {
+  color: var(--accent);
+}
+
+.member-description {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  font-weight: 300;
+  margin-bottom: 2.4rem;
+}
+
+.step-img-box {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  /* border: 2px solid pink; */
+}
+
+.step-img {
+  width: 90%;
+  height: auto;
+  border-radius: 3%;
+  border: 2px solid var(--accent);
+}
+
+/* ////////////////////////  TEAM  //////////////////////////////// */
 
 .section-title h2 {
   color: var(--accent);
@@ -80,47 +157,6 @@
   text-transform: uppercase;
 }
 
-.step-text-box {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.heading-tertiary {
-  font-weight: 600;
-  margin-bottom: 0.8rem;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-  color: var(--textColor);
-  margin-bottom: 4.8rem;
-}
-
-.accent-word {
-  color: var(--accent);
-}
-
-.step-img-box {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  /* border: 2px solid pink; */
-}
-
-.step-img {
-  width: 100%;
-  height: 100%;
-  border-radius: 3%;
-}
-
-.history-description {
-  font-size: 2rem;
-  line-height: 3.2rem;
-  font-weight: 300;
-  margin-bottom: 2.4rem;
-}
-
-/* ////////////////////////  TEAM  //////////////////////////////// */
-
 .team {
   margin: 0 auto;
   margin-bottom: 4.8rem;
@@ -130,11 +166,12 @@
   text-transform: uppercase;
 }
 
-.team-grid {
+#team-grid {
+  max-width: 120rem;
   /* border: 2px solid red; */
   display: grid;
   gap: 2.4rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
 
