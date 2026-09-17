@@ -269,8 +269,9 @@
 /* ////////////////////////  FOOTER  //////////////////////////////// */
 
 .footer {
-  /* background-color: var(--primary-shade-medium); */
-  padding: 2.4rem 0;
+  background-color: var(--primary-shade-medium);
+  padding: 1.2rem 0;
+  margin-top: 4.8rem;
   /* border: 2px solid green; */
 }
 

@@ -1,0 +1,174 @@
+/* ///////////////////////////  HEADER  ///////////////////////////// */
+
+.header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 10rem;
+  align-items: center;
+  max-width: 1600px;
+  padding: 1.6rem 3.2rem;
+}
+
+.header-logo {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+
+.main-nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link {
+  display: block;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.main-nav-link:hover {
+  color: var(--accent);
+  transition: all 0.4s ease-out;
+}
+
+.main-nav-link:focus,
+.main-nav-link:active {
+  color: var(--accent);
+}
+
+/* ////////////////////////  HISTORY  //////////////////////////////// */
+
+.services {
+  margin: 0 auto;
+  height: 85rem;
+  /* border: 2px solid green; */
+  /* margin-bottom: 4.8rem; */
+  /* padding-bottom: 4.8rem; */
+  background-color: var(--primary-shade-medium);
+}
+
+#history-section-title {
+  background-color: var(--primary-shade-medium);
+  /* border: 2px solid blue; */
+
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+}
+
+#history-container {
+  /* border: 2px solid red; */
+  height: auto;
+  padding: 4.8rem 0.2rem;
+  position: relative;
+}
+
+.section-title h2 {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 1.2rem;
+  text-decoration-thickness: 3px;
+  margin-bottom: 3.2rem;
+  text-transform: uppercase;
+}
+
+.section-title h3 {
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.step-text-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading-tertiary {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--textColor);
+  margin-bottom: 4.8rem;
+}
+
+.accent-word {
+  color: var(--accent);
+}
+
+.step-img-box {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  /* border: 2px solid pink; */
+}
+
+.step-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3%;
+}
+
+.history-description {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  font-weight: 300;
+  margin-bottom: 2.4rem;
+}
+
+/* ////////////////////////  TEAM  //////////////////////////////// */
+
+.team {
+  margin: 0 auto;
+  margin-bottom: 4.8rem;
+}
+
+#team-section-title {
+  text-transform: uppercase;
+}
+
+.team-grid {
+  /* border: 2px solid red; */
+  display: grid;
+  gap: 2.4rem;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.img-item {
+  border: 2px solid var(--accent);
+  width: 28rem;
+  height: 42rem;
+  cursor: pointer;
+}
+
+.team-img {
+  height: 100%;
+  object-fit: fill;
+}
+
+/* ////////////////////////  FOOTER  //////////////////////////////// */
+
+.footer {
+  background-color: var(--primary-shade-medium);
+  padding: 1.2rem 0;
+  margin-top: 4.8rem;
+  /* border: 2px solid green; */
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-p {
+  font-size: 1.4rem;
+}
+
+#footer-links {
+  font-size: 1.4rem;
+}
