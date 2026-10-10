@@ -456,7 +456,7 @@
 
 .gallery__btn--left {
   position: absolute;
-  background: transparent;
+  left: 0;
 }
 
 .gallery__btn--right {
@@ -465,7 +465,16 @@
 }
 
 .gallery-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.8rem;
+  width: 0.7em;
+  height: 0.7em;
+  line-height: 1;
+  border-radius: 50%;
   color: var(--accent);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* ////////////////////////  CARD & MAP  //////////////////////////////// */

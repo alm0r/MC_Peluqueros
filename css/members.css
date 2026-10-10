@@ -175,16 +175,84 @@
   justify-items: center;
 }
 
-.img-item {
+/* .img-item {
   border: 2px solid var(--accent);
   width: 34rem;
   height: 50rem;
   cursor: pointer;
+} */
+
+/* .team-img {
+  height: 100%;
+  object-fit: fill;
+} */
+
+.img-item {
+  position: relative;
+  border: 2px solid var(--accent);
+  width: 34rem;
+  height: 50rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.img-item:hover .img-cover {
+  visibility: visible;
+  height: 100%;
+  transform: translateY(0);
 }
 
 .team-img {
   height: 100%;
   object-fit: fill;
+}
+
+.img-cover {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--primary);
+  opacity: 0.85;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in;
+  z-index: 2;
+}
+
+.person-name {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+
+.person-title {
+  font-size: 1.4rem;
+  margin-bottom: 2.4rem;
+  font-weight: 300;
+  text-transform: none;
+}
+
+.btn.step-btn {
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  background: transparent;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1.2rem 2.4rem;
+  font-weight: 500;
+}
+
+.btn.step-btn a {
+  font-size: 1.2rem;
+}
+
+.step-btn:hover {
+  color: var(--textColor);
+  background-color: var(--accent);
 }
 
 /* ////////////////////////  FOOTER  //////////////////////////////// */

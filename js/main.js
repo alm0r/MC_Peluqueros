@@ -113,7 +113,7 @@ const slider = function () {
 
 slider();
 
-//////////////////////////////   REVIEWS TESTIMONIALS ANIMATION  /////////////////////////////////////////////////
+//////////////////////////////   IMG GALLERY ANIMATION  /////////////////////////////////////////////////
 
 const gallerySlider = function () {
   const slides = document.querySelectorAll(".gallery-img");
@@ -155,26 +155,13 @@ const gallerySlider = function () {
 
   btnRight.addEventListener("click", nextSlide);
   btnLeft.addEventListener("click", prevSlide);
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowLeft") {
+      prevSlide();
+    }
+    e.key === "ArrowRight" && nextSlide();
+  });
 };
 
 gallerySlider();
-
-// slides.forEach((e, i) => (e.style.border = "2px solid orange"));
-
-// document.querySelector("body").setAttribute("style", "background-color: blue");
-
-// document.querySelector("body").style.background = "grey";
-
-// const navLinks = document.querySelectorAll(".main-nav-link");
-// console.log("test");
-
-// navLinks.forEach((e) => {
-//   e.addEventListener("click", function () {
-//     console.log("click!");
-//     e.style.color = "{var(--textColor)";
-//   });
-// });
-
-// window.addEventListener("load", {
-//   document.querySelector(".hero-img").addClass = "hero-img-animation"
-// })
