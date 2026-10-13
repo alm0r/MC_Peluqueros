@@ -70,7 +70,7 @@
 
 .hero-img-animation {
   display: block;
-  transform: translateY(-120px);
+  transform: translateY(-90px);
   transition: 7s all ease;
 }
 
@@ -493,9 +493,12 @@
 }
 
 .map {
-  display: inline-block;
+  /* display: inline-block; */
   max-width: 80rem;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-logo {
@@ -619,4 +622,58 @@
   font-size: 1.4rem;
 }
 
-/* ///////////////////////////  GENERAL RULES  ///////////////////////////// */
+/* ///////////////////////////  MEDIA QUERIES ///////////////////////////// */
+
+/* rem and em do NOT depend on html font-size in media queries */
+/* Instead, 1rem = 1em = 16px */
+
+/* Dosent matter that much if you mantain the proportions scale */
+
+/* - Font Size System(px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* - Spacing System (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/* ********************************* */
+/* BELOW  1600px screen resolution (Smalled Desktops)
+/* ********************************* */
+
+/* 1600/16 = 101 */
+@media (max-width: 101em) {
+  #donde-encontrarnos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .culture-section-grid {
+    /* border: 2px solid orange; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .map iframe {
+    width: 800px;
+  }
+
+  .gallery-slider {
+    max-width: 120rem;
+  }
+
+  .gallery-img {
+    height: 80%;
+  }
+
+  .footer .container {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+}
+
+/* ********************************* */
+/* BELOW  1100px screen resolution 
+/* ********************************* */
+
+/* 1100/16 = 69 */
