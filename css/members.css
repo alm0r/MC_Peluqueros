@@ -43,9 +43,6 @@
 .member {
   margin: 0 auto;
   height: 85rem;
-  /* border: 2px solid green; */
-  /* margin-bottom: 4.8rem; */
-  /* padding-bottom: 4.8rem; */
   background-color: var(--primary-shade-medium);
 }
 
@@ -268,6 +265,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  max-width: 110rem;
+  margin: 0 auto;
 }
 
 .footer-p {
@@ -276,4 +276,57 @@
 
 #footer-links {
   font-size: 1.4rem;
+}
+
+/* rem and em do NOT depend on html font-size in media queries */
+/* Instead, 1rem = 1em = 16px */
+
+/* Dosent matter that much if you mantain the proportions scale */
+
+/* - Font Size System(px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* - Spacing System (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/* ********************************* */
+/* BELOW  1600px screen resolution (Smalled Desktops)
+/* ********************************* */
+
+/* 1150/16 = 72 */
+@media (max-width: 72em) {
+  .member h1 {
+    font-size: 3.6rem;
+  }
+
+  .member h2 {
+    font-size: 2.4rem;
+  }
+
+  .member p {
+    font-size: 1.8rem;
+  }
+
+  .member-subtitle {
+    margin-bottom: 3.2rem;
+    font-size: 1.8rem;
+  }
+
+  .step-img {
+    width: 80%;
+  }
+
+  .img-item {
+    position: relative;
+    border: 2px solid var(--accent);
+    width: 24rem;
+    height: 35rem;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .footer .container {
+    max-width: 90rem;
+    margin: 0 auto;
+  }
 }

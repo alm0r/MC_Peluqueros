@@ -43,10 +43,13 @@
 .services {
   margin: 0 auto;
   height: 85rem;
-  /* border: 2px solid green; */
-  /* margin-bottom: 4.8rem; */
-  /* padding-bottom: 4.8rem; */
+
   background-color: var(--primary-shade-medium);
+}
+
+.history-section-grid {
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
 }
 
 #history-section-title {
@@ -136,6 +139,8 @@
   gap: 2.4rem;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
+  padding-right: 1.8rem;
+  padding-left: 1.8rem;
 }
 
 .img-item {
@@ -227,4 +232,67 @@
 
 #footer-links {
   font-size: 1.4rem;
+}
+
+/* ///////////////////////////  MEDIA QUERIES ///////////////////////////// */
+
+/* rem and em do NOT depend on html font-size in media queries */
+/* Instead, 1rem = 1em = 16px */
+
+/* Dosent matter that much if you mantain the proportions scale */
+
+/* - Font Size System(px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* - Spacing System (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/* ********************************* */
+/* BELOW  1500px screen resolution (Smalled Desktops)
+/* ********************************* */
+
+/* 1500/16 = 83 */
+@media (max-width: 88em) {
+  .services {
+    margin: 0 auto;
+    height: 115rem;
+
+    background-color: var(--primary-shade-medium);
+  }
+
+  #history-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    /* border: 2px solid red; */
+    max-width: 110rem;
+  }
+
+  .step-img {
+    width: 65%;
+    height: auto;
+    border-radius: 3%;
+  }
+
+  .step-text-box {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .team-grid {
+    margin: 0 auto;
+    width: 80rem;
+    display: grid;
+    gap: 4.8rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
+  }
+
+  .footer .container {
+    max-width: 70rem;
+    margin: 0 auto;
+  }
 }

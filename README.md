@@ -33,3 +33,5 @@ Take a look at these couple examples that I have in my own portfolio:
 **Patch Panel:** https://github.com/alecortega/patch-panel
 
 #TODO cambiar links de footer a mi portfolio
+
+#fill the alt text

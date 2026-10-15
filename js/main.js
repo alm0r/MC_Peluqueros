@@ -17,7 +17,6 @@ const scrollLoadAnimation = async function () {
     console.log(i, e.dataset.imgPosition);
     if (e.classList.contains("img-disable")) {
       e.classList.remove("img-disable");
-      // e.classList.add("img-enable");
       setTimeout(function () {
         e.classList.add("hero-img-animation");
       }, 500);
@@ -28,7 +27,7 @@ const scrollLoadAnimation = async function () {
   });
 };
 
-scrollLoadAnimation();
+// scrollLoadAnimation();
 
 //////////////////////////////   REVIEWS TESTIMONIALS ANIMATION  /////////////////////////////////////////////////
 
