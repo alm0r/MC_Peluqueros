@@ -43,9 +43,6 @@
 .services {
   margin: 0 auto;
   height: 85rem;
-  /* border: 2px solid green; */
-  /* margin-bottom: 4.8rem; */
-  /* padding-bottom: 4.8rem; */
   background-color: var(--primary-shade-medium);
 }
 
@@ -287,4 +284,70 @@
 
 #footer-links {
   font-size: 1.4rem;
+}
+
+/* ///////////////////////////  MEDIA QUERIES ///////////////////////////// */
+
+/* rem and em do NOT depend on html font-size in media queries */
+/* Instead, 1rem = 1em = 16px */
+
+/* Dosent matter that much if you mantain the proportions scale */
+
+/* - Font Size System(px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* - Spacing System (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/* ********************************* */
+/* BELOW  1600px screen resolution (Smalled Desktops)
+/* ********************************* */
+
+/* 1600/16 = 101 */
+@media (max-width: 101em) {
+  #donde-encontrarnos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .culture-section-grid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .map iframe {
+    width: 800px;
+  }
+
+  .footer .container {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+}
+
+/* ********************************* */
+/* BELOW  1500px screen resolution (Smalled Desktops)
+/* ********************************* */
+/* 1500/16 = 93 */
+
+@media (max-width: 93em) {
+  .services {
+    margin: 0 auto;
+    height: 145rem;
+    /* border: 2px solid purple; */
+  }
+
+  .services-note {
+    position: absolute;
+    top: 45%;
+    font-size: 1.4rem;
+  }
+
+  #services-container {
+    grid-template-columns: 1fr;
+    border: 2px solid orange;
+    width: 90rem;
+  }
 }
