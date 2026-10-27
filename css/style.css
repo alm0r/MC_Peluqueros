@@ -277,3 +277,43 @@ a:visited {
   padding-bottom: 8rem;
   background-color: var(--primary);
 }
+
+/* ********************************* */
+/* BELOW  1100px MOBILE NAVIGATION 
+/* ********************************* */
+
+/* 1100/16 = 69 */
+
+.ph.ph-list[name="hamburger-icon"],
+.ph.ph-x[name="close-icon"] {
+  cursor: pointer;
+  font-size: 3rem;
+  display: none;
+}
+
+@media (max-width: 69em) {
+  .header {
+    position: relative;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    z-index: 2;
+    border: 2px solid grey;
+    background-color: var(--accent);
+    width: 100%;
+  }
+  .main-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 10rem);
+  }
+  .ph.ph-list[name="hamburger-icon"] {
+    display: none;
+  }
+}
