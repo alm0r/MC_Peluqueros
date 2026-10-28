@@ -1,5 +1,15 @@
 console.log("main script working");
 
+//////////////////////////////   MOBILE NAVIGATION  /////////////////////////////////////////////////
+
+document.querySelector(".ph-list").addEventListener("click", function () {
+  document.querySelector(".header").classList.add("nav-open");
+});
+
+document.querySelector(".ph-x").addEventListener("click", function () {
+  document.querySelector(".header").classList.remove("nav-open");
+});
+
 //////////////////////////////   HERO SCROLL ANIMATION   /////////////////////////////////////////////////
 
 // const scrollLoadAnimation = () => {
