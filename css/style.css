@@ -279,6 +279,23 @@ a:visited {
 }
 
 /* ********************************* */
+/* STICKY NAV BAR
+/* ********************************* */
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  height: 10rem;
+  background-color: var(--primary-shade-dark);
+}
+.sticky .hero {
+  margin-top: 10rem;
+}
+
+/* ********************************* */
 /* BELOW  1100px MOBILE NAVIGATION 
 /* ********************************* */
 

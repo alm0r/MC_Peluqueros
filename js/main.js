@@ -3,12 +3,33 @@ console.log("main script working");
 //////////////////////////////   MOBILE NAVIGATION  /////////////////////////////////////////////////
 
 document.querySelector(".ph-list").addEventListener("click", function () {
+  console.log("click");
   document.querySelector(".header").classList.add("nav-open");
 });
 
 document.querySelector(".ph-x").addEventListener("click", function () {
   document.querySelector(".header").classList.remove("nav-open");
 });
+
+//////////////////////////////   STICKY NAVIGATION ON MAIN PAGE /////////////////////////////////////////////////
+
+const sectionToObserve = document.querySelector(".hero");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+  },
+);
+
+obs.observe(sectionToObserve);
 
 //////////////////////////////   HERO SCROLL ANIMATION   /////////////////////////////////////////////////
 

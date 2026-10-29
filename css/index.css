@@ -7,8 +7,9 @@
   justify-content: space-between;
   height: 10rem;
   align-items: center;
-  max-width: 1600px;
+  /* max-width: 1600px; */
   padding: 1.6rem 3.2rem;
+  background-color: var(--primary-shade-dark);
 }
 
 .header-logo {
@@ -620,6 +621,23 @@
 
 #footer-links {
   font-size: 1.4rem;
+}
+
+/* ********************************* */
+/* STICKY NAV BAR
+/* ********************************* */
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  height: 10rem;
+  background-color: var(--accent-2);
+}
+.sticky .hero {
+  margin-top: 10rem;
 }
 
 /* ///////////////////////////  MEDIA QUERIES ///////////////////////////// */

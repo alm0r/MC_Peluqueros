@@ -6,8 +6,9 @@
   justify-content: space-between;
   height: 10rem;
   align-items: center;
-  max-width: 1600px;
+  /* max-width: 1600px; */
   padding: 1.6rem 3.2rem;
+  background-color: var(--primary-shade-dark);
 }
 
 .header-logo {
@@ -189,7 +190,7 @@
   border: 2px solid var(--accent);
   width: 34rem;
   height: 50rem;
-  cursor: pointer;
+  /* cursor: pointer; */
   overflow: hidden;
 }
 
