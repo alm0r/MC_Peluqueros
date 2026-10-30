@@ -36,16 +36,21 @@ const obs = new IntersectionObserver(
 
 obs.observe(sectionToObserve);
 
-//////////////////////////////   HERO SCROLL ANIMATION   /////////////////////////////////////////////////
+//////////////////////////////   MOBILE NAVIGATION NAV LIST === HERO HEIGHT /////////////////////////////////////////////////
 
-// const scrollLoadAnimation = () => {
-//   const heroImg = document.querySelector(".hero-img");
-//   heroImg.classList.add("hero-img-animation");
-//   window.addEventListener("load", function () {
-//     if (!heroImg) return;
-//     // heroImg.classList.add("hero-img-animation");
-//   });
-// };
+const hero = document.querySelector(".hero");
+const navList = document.querySelector(".main-nav-list");
+
+if (hero && navList) {
+  const syncNavHeight = () => {
+    navList.style.setProperty("--hero-height", `${hero.getBoundingClientRect().height}px`);
+  };
+
+  new ResizeObserver(syncNavHeight).observe(hero);
+  syncNavHeight();
+}
+
+//////////////////////////////   HERO SCROLL ANIMATION   /////////////////////////////////////////////////
 
 const scrollLoadAnimation = async function () {
   const heroImg = document.querySelectorAll(".hero-img");

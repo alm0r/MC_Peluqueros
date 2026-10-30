@@ -278,6 +278,10 @@ a:visited {
   background-color: var(--primary);
 }
 
+.section-title > h3 {
+  margin: 0 3rem;
+}
+
 /* ********************************* */
 /* STICKY NAV BAR
 /* ********************************* */
@@ -350,10 +354,10 @@ a:visited {
   .main-nav-list {
     display: flex;
     flex-direction: column;
-    gap: 6.4rem;
-    justify-content: center;
+    gap: 4.2rem;
+    justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: var(--hero-height, 60vh);
   }
   .ph-list {
     display: block;

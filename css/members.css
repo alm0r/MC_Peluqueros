@@ -173,18 +173,6 @@
   justify-items: center;
 }
 
-/* .img-item {
-  border: 2px solid var(--accent);
-  width: 34rem;
-  height: 50rem;
-  cursor: pointer;
-} */
-
-/* .team-img {
-  height: 100%;
-  object-fit: fill;
-} */
-
 .img-item {
   position: relative;
   border: 2px solid var(--accent);
@@ -229,7 +217,8 @@
 
 .person-title {
   font-size: 1.4rem;
-  margin-bottom: 2.4rem;
+  margin: 0 auto;
+
   font-weight: 300;
   text-transform: none;
 }
@@ -291,11 +280,12 @@
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
 
 /* ********************************* */
-/* BELOW  1600px screen resolution (Smalled Desktops)
+/* BELOW  1100px MOBILE NAVIGATION 
 /* ********************************* */
 
-/* 1150/16 = 72 */
-@media (max-width: 72em) {
+/* 1100/16 = 69 */
+
+@media (max-width: 69em) {
   .member h1 {
     font-size: 3.6rem;
   }
@@ -305,7 +295,7 @@
   }
 
   .member p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .member-subtitle {
@@ -313,8 +303,13 @@
     font-size: 1.8rem;
   }
 
+  #team-grid {
+    display: flex;
+    justify-content: center;
+  }
+
   .step-img {
-    width: 80%;
+    width: 90%;
   }
 
   .img-item {
@@ -329,5 +324,140 @@
   .footer .container {
     max-width: 90rem;
     margin: 0 auto;
+  }
+}
+
+/* ********************************* */
+/* BELOW  850px screen resolution 
+/* ********************************* */
+
+/* 850/16 = 53 */
+
+@media (max-width: 53em) {
+  #member-container {
+    grid-template-columns: 1fr;
+  }
+  .member {
+    margin: 0 auto;
+    height: 115rem;
+    background-color: var(--primary-shade-medium);
+  }
+
+  .member-subtitle {
+    font-size: 2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .member-title {
+    margin-bottom: 4rem;
+  }
+
+  .member h1 {
+    font-size: 3rem;
+  }
+
+  .member h2 {
+    font-size: 2rem;
+  }
+
+  .member p {
+    font-size: 1.4rem;
+  }
+
+  .member-description {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 300;
+    margin-bottom: 1.6rem;
+  }
+
+  .member-subtitle {
+    margin-bottom: 3.2rem;
+    font-size: 1.8rem;
+  }
+
+  .section-title h2 {
+    font-size: 3.6rem;
+  }
+
+  .section-title h3 {
+    font-size: 2.4rem;
+  }
+
+  #team-grid {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-item {
+    width: 20rem;
+    height: 28rem;
+  }
+  .step-img {
+    width: 50%;
+    margin-bottom: 6rem;
+  }
+
+  .person-name {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  .person-title {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 1.6rem;
+
+    font-weight: 300;
+    text-transform: none;
+  }
+
+  .btn.step-btn {
+    color: var(--accent);
+    border: 2px solid var(--accent);
+    background: transparent;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .footer .container {
+    max-width: 64rem;
+    margin: 0 auto;
+  }
+}
+
+/* ********************************* */
+/* BELOW  650px screen resolution 
+/* ********************************* */
+
+/* 650/16 = 41 */
+
+@media (max-width: 41em) {
+  .step-img {
+    width: 70%;
+  }
+
+  #team-grid {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+  /* .img-item {
+    width: 15rem;
+    height: 21rem;
+  } */
+  .footer .container {
+    max-width: 44rem;
+    margin: 0 auto;
+  }
+
+  .footer-p,
+  #footer-links {
+    font-size: 1rem;
   }
 }

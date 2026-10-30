@@ -348,7 +348,45 @@
 
   #services-container {
     grid-template-columns: 1fr;
-    border: 2px solid orange;
-    width: 90rem;
+    max-width: 100rem;
+  }
+
+  .heading-tertiary {
+    font-size: 3rem;
+  }
+
+  .services-item > span {
+    font-size: 2.4rem;
+  }
+
+  .step-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ********************************* */
+/* BELOW  1100px MOBILE NAVIGATION 
+/* ********************************* */
+
+/* 1100/16 = 69 */
+
+@media (max-width: 69em) {
+  #services-container {
+    grid-template-columns: 1fr;
+    max-width: 80rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .services-item > span {
+    font-size: 1.8rem;
+  }
+
+  .step-img {
+    width: 90%;
+    height: auto;
   }
 }

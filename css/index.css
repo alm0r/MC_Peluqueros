@@ -253,7 +253,7 @@
 .slider__btn {
   position: absolute;
   top: 50%;
-  z-index: 10;
+  z-index: 3;
   border: none;
   font-family: inherit;
   font-size: 4.2rem;
@@ -384,7 +384,7 @@
 
 .services-item {
   text-align: center;
-  max-width: 30rem;
+  width: 30rem;
   height: 40rem;
   justify-self: center;
   align-self: center;
@@ -748,19 +748,131 @@
   }
 
   .gallery-img {
-    height: 70%;
+    height: 80%;
   }
 
   .gallery__btn--left {
     position: absolute;
     left: 0;
-    top: 25%;
+    top: 30%;
   }
 
   .gallery__btn--right {
     position: absolute;
     right: 0;
-    top: 25%;
+    top: 30%;
     transform: translate(0%, 0%);
+  }
+
+  #services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ********************************* */
+/* BELOW  900px screen resolution 
+/* ********************************* */
+
+/* 900/16 = 56 */
+
+@media (max-width: 56em) {
+  .section-title h2 {
+    font-size: 3.6rem;
+  }
+
+  .section-title h3 {
+    font-size: 2.4rem;
+  }
+
+  .testimonial {
+    width: 65%;
+  }
+
+  .testimonial__text {
+    font-size: 1.4rem;
+  }
+
+  .testimonial__name {
+    font-size: 1.6rem;
+  }
+
+  .testimonial__location {
+    font-size: 1.4rem;
+  }
+
+  .slider__btn--left {
+    left: 10%;
+  }
+
+  .slider__btn--right {
+    right: 10%;
+  }
+
+  .reviews .step-btn > a {
+    font-size: 1.6rem;
+  }
+
+  #services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-slider {
+    max-width: 70rem;
+  }
+
+  .gallery-img {
+    height: 100%;
+  }
+
+  .gallery__btn--left {
+    top: 40%;
+  }
+
+  .gallery__btn--right {
+    top: 40%;
+  }
+}
+
+/* ********************************* */
+/* BELOW  850px screen resolution 
+/* ********************************* */
+
+/* 850/16 = 53 */
+
+@media (max-width: 53em) {
+  #culture-step {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .step-img-left {
+    display: none;
+  }
+
+  .heading-tertiary {
+    font-size: 2.8rem;
+    /* margin: 0 auto; */
+    margin-bottom: 0.8rem;
+  }
+
+  .step-text-box p {
+    /* text-align: center; */
+    font-size: 1.8rem;
+  }
+
+  .step-text-box > a {
+    margin: 0 auto;
+  }
+
+  .btn.step-btn {
+    color: var(--accent);
+    border: 2px solid var(--accent);
+    background: transparent;
+    width: fit-content;
+    margin-top: 2.4rem;
+    margin-bottom: 6.4rem;
+    padding: 0.8rem 1.6rem;
+    font-weight: 500;
+    font-size: 1.6rem;
   }
 }
