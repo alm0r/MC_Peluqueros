@@ -3,11 +3,17 @@ console.log("main script working");
 //////////////////////////////   MOBILE NAVIGATION  /////////////////////////////////////////////////
 
 document.querySelector(".ph-list").addEventListener("click", function () {
-  console.log("click");
   document.querySelector(".header").classList.add("nav-open");
+  window.addEventListener("scroll", function () {
+    document.querySelector(".header").classList.remove("nav-open");
+  });
 });
 
 document.querySelector(".ph-x").addEventListener("click", function () {
+  document.querySelector(".header").classList.remove("nav-open");
+});
+
+document.querySelector("#contact-link").addEventListener("click", function () {
   document.querySelector(".header").classList.remove("nav-open");
 });
 

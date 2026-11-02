@@ -309,6 +309,10 @@
   .history-description {
     font-size: 1.8rem;
   }
+
+  #main-nav-list-hotfix {
+    height: 90vh;
+  }
 }
 
 /* ********************************* */
@@ -334,10 +338,6 @@
 /* 650/16 = 41 */
 
 @media (max-width: 41em) {
-  .team-grid {
-    /* border: 2px solid green; */
-  }
-
   .img-item {
     width: 20rem;
     height: 30rem;

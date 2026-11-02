@@ -48,9 +48,7 @@
 
 .hero {
   max-height: 90rem;
-  /* border: 2px solid pink; */
   overflow: hidden;
-
   position: relative;
 }
 
@@ -864,6 +862,18 @@
     margin: 0 auto;
   }
 
+  .testimonial {
+    padding: 3.2rem 4.8rem;
+  }
+
+  .testimonial__location {
+    margin-top: 0.6rem;
+  }
+
+  .dots {
+    bottom: 5%;
+  }
+
   .btn.step-btn {
     color: var(--accent);
     border: 2px solid var(--accent);
@@ -874,5 +884,35 @@
     padding: 0.8rem 1.6rem;
     font-weight: 500;
     font-size: 1.6rem;
+  }
+}
+
+/* ********************************* */
+/* BELOW  700px screen resolution 
+/* ********************************* */
+
+/* 70/16 = 43 */
+
+@media (max-width: 43em) {
+  .dots {
+    bottom: 0%;
+  }
+}
+
+/* ********************************* */
+/* BELOW  600px screen resolution 
+/* ********************************* */
+
+/* 600/16 = 37 */
+
+@media (max-width: 37em) {
+  .dots {
+    border: 2px solid red;
+    bottom: 0%;
+  }
+
+  .testimonial {
+    padding: 2.4rem 4.8rem;
+    margin-top: 8rem;
   }
 }
