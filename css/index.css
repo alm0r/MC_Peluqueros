@@ -774,6 +774,18 @@
 /* 900/16 = 56 */
 
 @media (max-width: 56em) {
+  .hero-text-box > h1 {
+    font-size: 5.2rem;
+  }
+
+  .hero-text-box > h2 {
+    font-size: 3rem;
+  }
+
+  .hero-text-box > h3 {
+    font-size: 2rem;
+  }
+
   .section-title h2 {
     font-size: 3.6rem;
   }
@@ -907,7 +919,6 @@
 
 @media (max-width: 37em) {
   .dots {
-    border: 2px solid red;
     bottom: 0%;
   }
 
