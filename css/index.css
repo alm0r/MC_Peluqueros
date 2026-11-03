@@ -143,7 +143,8 @@
 
 .section-title h3 {
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
+  line-height: 3rem;
 }
 
 .step-text-box {
@@ -332,6 +333,10 @@
 }
 
 /* Dots */
+
+/* .reviews-btn {
+  position: relative;
+} */
 
 .dots {
   position: absolute;
@@ -878,12 +883,19 @@
     padding: 3.2rem 4.8rem;
   }
 
+  .foto-cliente {
+    width: 80%;
+  }
   .testimonial__location {
     margin-top: 0.6rem;
+    font-size: 1.1rem;
   }
 
+  .testimonial__name {
+    font-size: 1.2rem;
+  }
   .dots {
-    bottom: 5%;
+    bottom: 1%;
   }
 
   .btn.step-btn {
@@ -897,6 +909,19 @@
     font-weight: 500;
     font-size: 1.6rem;
   }
+
+  .card {
+    max-width: 60rem;
+  }
+
+  .map {
+    width: 60rem;
+  }
+
+  .footer .container {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
 }
 
 /* ********************************* */
@@ -906,24 +931,129 @@
 /* 70/16 = 43 */
 
 @media (max-width: 43em) {
-  .dots {
-    bottom: 0%;
+  .hero-text-box > h1 {
+    font-size: 3.6rem;
   }
-}
 
-/* ********************************* */
-/* BELOW  600px screen resolution 
-/* ********************************* */
+  .hero-text-box > h2 {
+    font-size: 2rem;
+  }
 
-/* 600/16 = 37 */
+  .hero-text-box > h3 {
+    font-size: 1.4rem;
+  }
 
-@media (max-width: 37em) {
-  .dots {
-    bottom: 0%;
+  .section-title h2 {
+    font-size: 3.6rem;
+    line-height: 6rem;
   }
 
   .testimonial {
     padding: 2.4rem 4.8rem;
-    margin-top: 8rem;
+    margin-top: 0rem;
+  }
+  .testimonial__text {
+    font-size: 1.2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .dots {
+    bottom: 0%;
+  }
+
+  .card {
+    max-width: 40rem;
+  }
+
+  .card-logo {
+    max-width: 14rem;
+  }
+
+  .card-element-icon {
+    font-size: 1.8rem;
+  }
+
+  .card-info-text {
+    font-size: 1.4rem;
+  }
+
+  .card-info-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .social-links {
+    display: flex;
+  }
+
+  .ph-leaf {
+    font-size: 2.4rem;
+  }
+  .green-wash p {
+    font-size: 1.2rem;
+  }
+
+  .uk-flag-logo {
+    max-width: 4.2rem;
+  }
+
+  .speak-english p {
+    font-size: 1.2rem;
+  }
+
+  .map {
+    width: 40rem;
+  }
+
+  .footer .container {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+
+  .footer-p,
+  #footer-links {
+    font-size: 1.2rem;
+  }
+
+  /* ********************************* */
+  /* BELOW  600px screen resolution 
+/* ********************************* */
+
+  /* 600/16 = 37 */
+
+  @media (max-width: 37em) {
+    .dots {
+      bottom: 0%;
+    }
+
+    .testimonial {
+      padding: 2.4rem 4.8rem;
+      margin-top: 0rem;
+    }
+  }
+  .btn.step-btn {
+    margin-bottom: 0;
+  }
+
+  .reviews .step-btn > a {
+    font-size: 1.2rem;
+  }
+
+  .services-item {
+    width: 24rem;
+    height: 32rem;
+  }
+
+  .services-item-logo {
+    max-width: 8rem;
+  }
+
+  .services-item-title {
+    font-size: 2.4rem;
+  }
+
+  .services-item-text {
+    font-size: 1.4rem;
   }
 }
