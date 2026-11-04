@@ -54,14 +54,12 @@
 
 #history-section-title {
   background-color: var(--primary-shade-medium);
-  /* border: 2px solid blue; */
 
   padding-top: 4.8rem;
   padding-bottom: 4.8rem;
 }
 
 #history-container {
-  /* border: 2px solid red; */
   height: auto;
   padding: 4.8rem 0.2rem;
   position: relative;
@@ -106,7 +104,6 @@
   display: grid;
   justify-items: center;
   align-items: center;
-  /* border: 2px solid pink; */
 }
 
 .step-img {
@@ -134,7 +131,6 @@
 }
 
 .team-grid {
-  /* border: 2px solid red; */
   display: grid;
   gap: 2.4rem;
   grid-template-columns: repeat(4, 1fr);
@@ -217,7 +213,6 @@
   background-color: var(--primary-shade-medium);
   padding: 1.2rem 0;
   margin-top: 4.8rem;
-  /* border: 2px solid green; */
 }
 
 .footer .container {
@@ -338,9 +333,22 @@
 /* 650/16 = 41 */
 
 @media (max-width: 41em) {
+  #team-grid {
+    gap: 2.4rem;
+  }
   .img-item {
     width: 20rem;
     height: 30rem;
+  }
+
+  .person-title,
+  .person-name {
+    text-align: center;
+  }
+
+  .btn.step-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
   }
 
   .footer .container {
@@ -359,3 +367,27 @@
 /* ********************************* */
 
 /* 500/16 = 31 */
+
+@media (max-width: 31em) {
+  .services {
+    height: 150rem;
+  }
+
+  #team-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-item {
+    width: 18rem;
+    height: 25rem;
+  }
+
+  .footer .container {
+    max-width: 30rem;
+    margin: 0 auto;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+}
